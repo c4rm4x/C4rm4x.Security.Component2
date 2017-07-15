@@ -1,0 +1,87 @@
+{
+  "name": "angular2-http",
+  "version": "1.0.0",
+  "description": "Http extensions for Angular 2",
+  "main": "./umd/angular2-http.js",
+  "module": "./esm/src/index.js",
+  "typings": "./esm/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c4rm4x/C4rm4x.Security.Component2.git"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build-umd": "webpack --config webpack.config.umd.js",
+    "build-angular": "ngc -p tsconfig-ngc.json",
+    "copy-package-info": "cp ./package.json ./dist/package.json && cp ./.npmignore ./dist/.npmignore",
+    "build": "npm run clean && npm run build-umd && npm run build-angular && npm run copy-package-info"
+  },
+  "keywords": [
+    "Angular2",
+    "http",
+    "angular2-http"
+  ],
+  "author": {
+    "name": "]C4rM4X["
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c4rm4x/C4rm4x.Security.Component2/issues"
+  },
+  "homepage": "https://github.com/c4rm4x/C4rm4x.Security.Component2#readme",
+  "dependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "ng2-cookies": "^1.0.12",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/animations": "^4.3.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/platform-browser": "^4.3.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/platform-server": "^4.0.0",
+    "@types/es6-shim": "^0.31.32",
+    "@types/jasmine": "^2.5.41",
+    "@types/node": "^7.0.5",
+    "awesome-typescript-loader": "^3.0.4-rc.0",
+    "babel-polyfill": "^6.22.0",
+    "chai": "^3.5.0",
+    "codelyzer": "^2.0.0",
+    "commitizen": "^2.9.5",
+    "compression-webpack-plugin": "^0.3.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "imports-loader": "^0.7.0",
+    "jasmine-core": "^2.6.4",
+    "karma": "^1.4.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.2",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-remap-istanbul": "^0.4.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-typescript": "^2.1.6",
+    "karma-webpack": "^1.8.1",
+    "phantomjs-prebuilt": "^2.1.7",
+    "rxjs": "^5.1.0",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
+    "sourcemap-istanbul-instrumenter-loader": "^0.2.0",
+    "standard-version": "^4.0.0",
+    "stylelint-webpack-plugin": "^0.5.1",
+    "ts-loader": "^1.3.3",
+    "tslint": "^4.0.2",
+    "tslint-loader": "^3.3.0",
+    "typedoc": "^0.5.0",
+    "typescript": "~2.3.3",
+    "validate-commit-msg": "^2.8.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.16.1",
+    "webpack-fix-default-import-plugin": "^1.0.1",
+    "zone.js": "^0.8.4"
+  }
+}
