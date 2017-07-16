@@ -31,6 +31,12 @@ module.exports = {
       commonjs2: '@angular/common',
       amd: '@angular/common'
     },
+    '@angular/router': {
+      root: ['ng', 'router'],
+      commonjs: '@angular/router',
+      commonjs2: '@angular/router',
+      amd: '@angular/router'
+    },
     '@angular/http': {
       root: ['ng', 'http'],
       commonjs: '@angular/http',
